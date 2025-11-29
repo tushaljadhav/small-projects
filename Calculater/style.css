@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* Main Calculator Box */
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 20px;
+    width: 320px;
+    padding: 15px;
+}
+
+/* Display */
+#display{
+    width: 100%;
+    padding: 12px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;   /* ← FIXES overflow */
+    margin-bottom: 15px;
+}
+
+
+/* Buttons Grid */
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Normal Buttons */
+button{
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+/* Orange buttons (operators) */
+.operater-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operater-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operater-btn:active{
+    transform: scale(0.95);
+}
