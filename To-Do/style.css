@@ -50,9 +50,19 @@ main{
     border-radius: 2px;
     padding-right: 30px;
     text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
 }
 #to-do-box li i{
     position: absolute;
     right: 10px;
     top: 10px;
 }
+
+.done{
+    text-decoration: line-through;
+    color: black;
+    background-color: #a7c957 !important;
+}
+
