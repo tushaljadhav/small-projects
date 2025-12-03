@@ -1,0 +1,70 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    font-family: "Inter", sans-serif;
+}
+
+/* Center Wrapper (Card) */
+.wrapper{
+    background: white;
+    padding: 40px 30px;
+    width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+/* Title */
+.wrapper h1{
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Input + Button side-by-side */
+.box{
+    display: flex;
+    gap: 10px;
+}
+
+/* Input Styling */
+#input{
+    flex: 1;
+    padding: 12px;
+    font-size: 17px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: .3s;
+}
+
+#input:focus{
+    border-color: #6366f1;
+}
+
+/* Button */
+button{
+    padding: 12px 20px;
+    font-size: 17px;
+    background: #6366f1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+button:hover{
+    background: #4f46e5;
+}
